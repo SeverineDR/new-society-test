@@ -27,10 +27,29 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        section {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
         footer {
             text-align: center;
             color: #666;
             margin-top: 2rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .service-item {
+            padding: 1rem;
+            background-color: #f8f8f8;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -42,6 +61,36 @@
         <section>
             <h2>About Us</h2>
             <p>We are building something amazing here. Stay tuned for more updates!</p>
+        </section>
+        <section>
+            <h2>Our Mission</h2>
+            <p>To create innovative solutions that enhance and improve the way people interact with technology in their daily lives. We believe in building sustainable, user-friendly systems that make a positive impact on society.</p>
+        </section>
+        <section>
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Digital Innovation</h3>
+                    <p>Cutting-edge solutions for modern challenges</p>
+                </div>
+                <div class="service-item">
+                    <h3>Tech Consulting</h3>
+                    <p>Expert guidance for your digital transformation</p>
+                </div>
+                <div class="service-item">
+                    <h3>Custom Development</h3>
+                    <p>Tailored solutions for your specific needs</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Get in touch with us to learn more about our services and how we can help you:</p>
+            <ul>
+                <li>Email: contact@newsociety.test</li>
+                <li>Phone: (555) 123-4567</li>
+                <li>Address: 123 Innovation Street, Tech City, TC 12345</li>
+            </ul>
         </section>
     </main>
     <footer>
